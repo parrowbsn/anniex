@@ -4,19 +4,19 @@ from ANNIEMUSIC import app
 from config import BOT_USERNAME
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя мя. вяσкєη яєρσѕ ✪
+✪ Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡 ✪
  
- ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
+ Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
  
- ➲ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪssᴜᴇ ✰
+ Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
  
- ➲ ɴᴏ ɪᴅ ʙᴀɴ ɪssᴜᴇ ✰
+Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
  
- ➲ᴜɴʟɪᴍɪᴛᴇᴅ ᴅʏɴᴏs ✰
+Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
  
- ➲ ʀᴜɴ 24x7 ʟᴀɢ ғʀᴇᴇ ᴡɪᴛʜᴏᴜᴛ sᴛᴏᴘ ✰
+Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
  
- ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ss
+ Rᴇᴘᴏ ʟᴇɢᴀ Lᴀɴᴅ ʟᴇʟᴇ 🤡
 **"""
 
 
@@ -31,13 +31,13 @@ async def start(_, msg):
             ],
      
             [
-             InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/aboutbrokenx"),
-             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/brokenXnetwork"),
+             InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Harshu_Raven"),
+             InlineKeyboardButton(" Network", url="https://t.me/RavenxNetwork"),
              ],
      
              [
-             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/+7yFRvkorUdFiZTll"),          
-             InlineKeyboardButton("︎ᴍᴜsɪᴄ", url=f"https://t.me/BROKENXNETWORK"),
+             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/Raven_Legion"),          
+             InlineKeyboardButton("︎ᴍᴜsɪᴄ", url=f"https://t.me/Raven_Legion"),
              ],
      
               ]
@@ -45,7 +45,7 @@ async def start(_, msg):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/91c6683a0074d9dce03c1.jpg",
+        photo="https://vault.pictures/p/ed5f2c41bf024abdb83201a26d776da1",
         caption=start_txt,
         reply_markup=reply_markup
     )
