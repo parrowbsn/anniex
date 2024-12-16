@@ -2,11 +2,9 @@ import re
 from dotenv import load_dotenv
 from pyrogram import filters
 import random
-from pyrogram.types import Message
-from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import Client
 from ANNIEMUSIC import app
-
-
 
 # "/gn" command ka handler
 @app.on_message(filters.command("oodnight", prefixes="g"))
@@ -14,11 +12,24 @@ def goodnight_command_handler(client: Client, message: Message):
     # Randomly decide whether to send a sticker or an emoji
     send_sticker = random.choice([True, False])
     
-    # Send a sticker or an emoji based on the random choice
+    # Inline button for updates
+    button = InlineKeyboardMarkup(
+        [[InlineKeyboardButton("Uᴘᴅᴀᴛᴇs", url="https://t.me/Sparrow_Bots")]]
+    )
+    
+    # Send a sticker or an emoji with the inline button
     if send_sticker:
-        client.send_sticker(message.chat.id, get_random_sticker())
+        client.send_sticker(
+            chat_id=message.chat.id,
+            sticker=get_random_sticker(),
+            reply_markup=button
+        )
     else:
-        client.send_message(message.chat.id, get_random_emoji())
+        client.send_message(
+            chat_id=message.chat.id,
+            text=get_random_emoji(),
+            reply_markup=button
+        )
 
 # Function to get a random sticker
 def get_random_sticker():
@@ -38,6 +49,5 @@ def get_random_emoji():
         "😪", 
         "💤",
         "🥱", 
-        
     ]
     return random.choice(emojis)
