@@ -29,6 +29,7 @@ DURATION_LIMIT = DURATION_LIMIT_MIN * 60
 # External APIs
 GPT_API = getenv("GPT_API", None)
 DEEP_API = getenv("DEEP_API", None)
+GIT_TOKEN = getenv("DEEP_API", None)
 
 # Heroku Deployment Settings
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
