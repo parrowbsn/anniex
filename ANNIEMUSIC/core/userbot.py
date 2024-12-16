@@ -47,13 +47,13 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Broken x Assistant starting...")
+        LOGGER(__name__).info(f"˹𝑪𝒖𝒕𝒊𝒆 ✘ Assɪsᴛᴀɴᴛ˼ starting...")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("BROKENXNETWORK")
+                await self.one.join_chat("SPARROW_Bots")
               
-                await self.one.join_chat("AboutBrokenX")
+                await self.one.join_chat("Raven_Legion")
             except:
                 pass
             assistants.append(1)
