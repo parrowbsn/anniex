@@ -16,7 +16,7 @@ OWNER_USERNAME = getenv("OWNER_USERNAME", "Harshu_Raven")
 BOT_USERNAME = getenv("BOT_USERNAME", "VC_INFINITE_X_BOT")
 BOT_NAME = getenv("BOT_NAME", "˹𝑪𝒖𝒕𝒊𝒆 ✘ 𝒎𝒖𝒔𝒊𝒄˼")
 ASSUSERNAME = getenv("ASSUSERNAME", "Cuties_assistant")
-OWNER_ID = int(getenv("OWNER_ID", "12345678")
+OWNER_ID = int(getenv("OWNER_ID", "12345678"))  # Add the closing parenthesis
 STRING1 = getenv("STRING1", ""))
 # MongoDB URI
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
